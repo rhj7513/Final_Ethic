@@ -5,6 +5,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
+# 한글,.,.,.,.
+import os
+font_path = os.path.join("fonts", "NanumGothicCoding.ttf")  # ✅ 절대 문자열 말고 os.path로 처리!
+
 # ---------- 기본 설정 ----------
 video_urls = [
     'https://www.youtube.com/watch?v=h9nQNPXPWig',
@@ -143,9 +147,16 @@ with col1:
                 # ax_wc.axis("off")
                 # st.pyplot(fig_wc)
                 # 워드클라우드 생성
+                # wordcloud = WordCloud(
+                #     # font_path="./fonts/NanumGothic.ttf",
+                #     font_path="fonts/NanumGothicCoding.ttf",  # ← 이 부분만 수정!
+                #     width=800,
+                #     height=400,
+                #     background_color='white',
+                #     colormap='tab10'
+                # ).generate(" ".join(tokens))
                 wordcloud = WordCloud(
-                    # font_path="./fonts/NanumGothic.ttf",
-                    font_path="fonts/NanumGothicCoding.ttf",  # ← 이 부분만 수정!
+                    font_path=font_path,
                     width=800,
                     height=400,
                     background_color='white',

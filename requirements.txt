@@ -3,5 +3,5 @@ pillow
 pandas
 requests
 matplotlib
-wordcloud
+wordcloud==1.9.2
 gTTS
