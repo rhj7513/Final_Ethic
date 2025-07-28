@@ -34,18 +34,3 @@ pip install streamlit pandas requests pillow
 # 실행
 streamlit run app.py
 
-
----
-
-### 📌 추가 팁
-
-- `assets/` 폴더에 `main_page.png`, `emotion_result.png` 스크린샷 이미지 저장하면 시각적 완성도 높아져!
-- 프로젝트를 `streamlit run` 하면 사이드바 메뉴로 여러 페이지 이동 가능해.
-- `requirements.txt`도 같이 올리면 좋음:
-
-```txt
-streamlit
-pandas
-requests
-Pillow
-
