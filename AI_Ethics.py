@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
 # 한글,.,.,.,.
-import os
-font_path = os.path.join("fonts", "NanumGothicCoding.ttf")  # ✅ 절대 문자열 말고 os.path로 처리!
+# import os
+# font_path = os.path.join("fonts", "NanumGothicCoding.ttf")  # ✅ 절대 문자열 말고 os.path로 처리!
 
 # ---------- 기본 설정 ----------
 video_urls = [
@@ -156,7 +156,7 @@ with col1:
                 #     colormap='tab10'
                 # ).generate(" ".join(tokens))
                 wordcloud = WordCloud(
-                    font_path=font_path,
+                    # font_path=font_path,
                     width=800,
                     height=400,
                     background_color='white',
